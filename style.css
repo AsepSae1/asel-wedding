@@ -1,0 +1,90 @@
+:root {
+    --sage: #B0D9B1;
+    --bg: #001524;
+    --shadow: 0 2px 2px rgba(0 0 0 / 0.5)
+}
+
+body {
+    font-size: 1.2rem;
+    font-family: 'STIX Two Text', serif;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/asell.jpg);
+    object-fit: cover;
+    z-index: -1;
+    filter: grayscale(50%);
+}
+
+
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+}
+
+.hero h1, .hero h4, .hero p {
+    text-shadow: var(--shadow);
+}
+
+.hero h1 {
+    font-family: 'Italianno', cursive;
+    font-size: 6rem;
+}
+
+.hero h4 {
+    font-size: 1.6rem;
+}
+
+.hero p {
+    font-size: 1.4rem;
+}
+
+.hero a {
+    color: #618264;
+    background-color: #D0E7D2;
+    box-shadow: var(--shadow);
+}
+
+.hero a:hover {
+    background-color: #618264;
+    color: #D0E7D2;
+}
+
+/* media query */
+/* laptop */
+@media (max-width: 992px) {
+    html {
+        font-size: 75%;
+    }
+    .simply-countdown > .simply-section {
+        padding: 50px;
+    }
+}
+/* tablet */
+@media (max-width: 768px) {
+    html {
+        font-size: 62.5%;
+    }
+    .simply-countdown > .simply-section {
+        padding: 40px;
+        margin: 5px;
+    }
+}
+
+/* handphone */
+@media (max-width: 576px) {
+    html {
+        font-size: 55%;
+    }
+    .simply-countdown > .simply-section {
+        padding: 30px;
+        margin: 3px;
+    }
+}
