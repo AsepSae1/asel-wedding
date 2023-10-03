@@ -16,10 +16,11 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(img/asell.jpg);
+    background-image: url(img/asep.jpg);
     object-fit: cover;
+    background-size: cover;
+    background-position: center;
     z-index: -1;
-    filter: grayscale(50%);
 }
 
 
@@ -57,6 +58,21 @@ body {
     color: #D0E7D2;
 }
 
+.mynavbar {}
+
+.mynavbar .navbar-brand, .mynavbar .offcanvas-header {
+    font-family: 'Italianno', cursive;
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+
+
+.mynavbar .nav-link {
+    font-family: 'STIX Two Text', serif;
+    font-weight: 600;
+    text-align: center;
+}
+
 /* media query */
 /* laptop */
 @media (max-width: 992px) {
@@ -75,6 +91,10 @@ body {
     .simply-countdown > .simply-section {
         padding: 40px;
         margin: 5px;
+    }
+    .mynavbar .nav-link {
+        font-family: 'STIX Two Text', serif;
+        font-size: 1.5rem;
     }
 }
 
