@@ -65,7 +65,6 @@ body {
 
 .mynavbar .offcanvas {
     height: 100vh;
-    overflow-x: hidden;
 }
 
 .mynavbar .navbar-brand, 
