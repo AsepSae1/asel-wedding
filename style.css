@@ -79,7 +79,6 @@ body {
 .mynavbar .nav-link {
     font-family: 'STIX Two Text', serif;
     font-weight: 600;
-    text-align: center;
 }
 
 .home {
@@ -133,8 +132,11 @@ body {
     .mynavbar .nav-link {
         font-family: 'STIX Two Text', serif;
         font-size: 1.5rem;
+        text-align: center;
     }
-}
+    .sticky-top {
+    overflow: hidden;
+  }
 
 /* handphone */
 @media (max-width: 576px) {
@@ -144,5 +146,22 @@ body {
     .simply-countdown > .simply-section {
         padding: 30px;
         margin: 3px;
+    }
+    .hero {
+        background-image: url(img/asepp.jpg);
+        object-fit: cover;
+        background-size: cover;
+        background-position: center;
+    }
+    .home {
+        object-fit: cover;
+        background-size: cover;
+        background-position: center;
+    }
+    .home h3 {
+        font-size: 16px;
+    }
+    .home p {
+        font-size: 14px;
     }
 }
