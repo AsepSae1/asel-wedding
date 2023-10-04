@@ -137,6 +137,11 @@ body {
     .sticky-top {
     overflow: hidden;
   }
+  .home {
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+  }
 
 /* handphone */
 @media (max-width: 576px) {
@@ -153,10 +158,6 @@ body {
         background-size: cover;
         background-position: center;
     }
-    .home {
-        object-fit: cover;
-        background-size: cover;
-        background-position: center;
     }
     .home h3 {
         font-size: 16px;
@@ -165,3 +166,4 @@ body {
         font-size: 14px;
     }
 }
+
