@@ -82,7 +82,7 @@ body {
 }
 
 .home {
-    background-image: url(img/abstractfloral.png);
+    background-image: url(img/bg.png);
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -90,7 +90,8 @@ body {
     padding-top: 17rem;
 }
 
-.home h2 {
+.home h2,
+.info h2 {
     color: #2a462d;
     font-family: 'Italianno', cursive;
     font-size: 5rem;
@@ -108,9 +109,112 @@ body {
     color: #2a462d;
 }
 
+.home .couple {
+    margin-top: 100px;
+  }
+  
+  .home .couple h3 {
+    font-family: 'Italianno', cursive;
+    font-size: 2.4rem;
+    color: #2a462d;
+    font-weight: bold;
+  }
+  
+  .home .couple img {
+    width: 100%;
+  }
+  
+  .home .heart {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(65px);
+  }
+  
+  .home .heart i {
+    margin: auto;
+    color: var(--sage);
+  }
+  .home .row-couple .col-l {
+    margin: 5%;
+  }
+  .countainer {
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+
+  .info {
+    background-image: url(img/bg2.png);
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    color: #2a462d;
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+  }
+  
+  .info .alamat {
+    color: #001524;
+    font-size: 1.1rem;
+  }
+  
+  .info .description {
+    color: #001524;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+  .info a {
+    background-color: #2a462d;
+    color: #abceae;
+  }
+  
+  .info .card {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 2px solid rgba(255, 255, 255, 1);
+  }
+  
+  .info .card-header {
+    border-bottom: 2px solid rgba(255, 255, 255, 1);
+    font-family: 'Italianno', cursive;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    font-size: 3rem;
+    color: #2a462d;
+
+  }
+  
+  .info .card-body {
+    font-size: 1.2rem;
+    color: #001524;
+  }
+  
+  .info .card-footer {
+    border-top: 2px solid rgba(255, 255, 255, 1);
+    font-size: 1rem;
+    font-weight: 300;
+    color: #001524;
+  }
+  
+
 
 
 /* media query */
+@media (max-width: 1200px) {
+    .home .heart {
+      transform: translateX(-50%) translateY(45px);
+    }
+  }
 /* laptop */
 @media (max-width: 992px) {
     html {
@@ -118,6 +222,27 @@ body {
     }
     .simply-countdown > .simply-section {
         padding: 50px;
+    }
+    .home .heart {
+        display: none;
+      }
+    .home p {
+        font-size: 16px;
+        }
+    .home .couple h3 {
+        font-size: 48px;
+        }
+    .info .alamat {
+        font-size: 16px;
+    }
+    .info .description {
+        font-size: 14px;
+    }
+    .info a {
+        font-size: 14px;
+    }
+    .info .card-body {
+        font-size: 1.3rem;
     }
 }
 /* tablet */
@@ -136,12 +261,29 @@ body {
     }
     .sticky-top {
     overflow: hidden;
-  }
-  .home {
-    object-fit: cover;
-    background-size: cover;
-    background-position: center;
-  }
+     }
+     .hero {
+        background-image: url(img/asepp.jpg);
+        object-fit: cover;
+        background-size: cover;
+        background-position: center;
+     }
+  .home p {
+    font-size: 14px;
+    }
+  .home .couple h3 {
+    font-size: 44px;
+    }
+    .countainer .row-couple .row {
+        margin-bottom: 10px;
+    }
+    .info .card-body {
+        font-size: 1.6rem;
+    }
+    .info .card-footer {
+        font-size: 1.3rem;
+    }
+}
 
 /* handphone */
 @media (max-width: 576px) {
@@ -158,12 +300,20 @@ body {
         background-size: cover;
         background-position: center;
     }
-    }
     .home h3 {
         font-size: 16px;
     }
     .home p {
         font-size: 14px;
     }
-}
+    .home .couple h3 {
+        font-size: 34px;
+    }
+    .info .card-body {
+        font-size: 1.8rem;
+    }
+    .info .card-footer {
+        font-size: 1.4rem;
+    }
+  }
 
